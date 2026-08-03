@@ -1,113 +1,101 @@
-# QR Code Generator & Scanner
+#  QR Code Generator & Scanner
 
-A simple and user-friendly **QR Code Generator & Scanner** built with **Python** and **Tkinter**. This application allows users to generate QR codes from text or URLs, scan QR codes using a webcam or image file, and save generated QR codes locally.
+A modern and responsive **QR Code Generator & Scanner** built using **HTML, CSS, and JavaScript**. This application allows users to generate QR codes, scan QR codes using a webcam or image, save history, switch between light and dark mode, and much more.
+
+---
+
+##  Preview
+
+![Project Screenshot](assets/output.png)
 
 ---
 
 ##  Features
 
 ###  QR Code Generator
+- Generate QR codes from text or URLs
+- Instant QR code preview
+- Download generated QR code
+- Clear generated QR code
+- Random QR code generator
+- Print QR code
+- Share QR code
+- Copy QR text
 
-* Generate QR codes from text
-* Generate QR codes from URLs
-* Save QR codes as PNG images
-* Clear input fields
-* Preview generated QR codes
-
-### 📷 QR Code Scanner
-
-* Scan QR codes using a webcam
-* Scan QR codes from image files
-* Display scanned text or URL
-* Open scanned URLs in the default browser
-* Copy scanned text to the clipboard
+###  QR Code Scanner
+- Scan QR codes using webcam
+- Scan QR codes from image files
+- Copy scanned result
+- Open scanned URLs directly
 
 ###  History
+- Automatically saves generated and scanned QR codes
+- Search history
+- Delete individual history items
+- Clear all history
+- Export history to JSON
+- Import history from JSON
 
-* Save generated QR codes
-* Save scanned results
-* View scan history
-* Clear history
+###  UI Features
+- Responsive design
+- Modern interface
+- Dark Mode
+- Toast notifications
+- Local Storage support
 
 ---
 
 ##  Technologies Used
 
-* Python 3
-* Tkinter
-* OpenCV
-* qrcode
-* Pillow (PIL)
-* pyzbar
-* JSON
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- QRCode.js
+- html5-qrcode
 
 ---
 
 ##  Project Structure
 
-```text
+```
 QR-Code-Generator-Scanner/
 │
-├── main.py
-├── qr_generator.py
-├── qr_scanner.py
-├── history.py
-├── utils.py
-├── history.json
-├── requirements.txt
+├── index.html
+├── style.css
+├── script.js
 ├── README.md
-├── LICENSE
 ├── .gitignore
 ├── .gitattributes
 │
-├── generated/
-│   └── qr_codes/
+├── assets/
+│   └── output.png
 │
-└── assets/
-    ├── icon.ico
-    └── screenshots/
+└── generated/
 ```
 
 ---
 
 ##  Installation
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/your-username/QR-Code-Generator-Scanner.git
 ```
 
-### 2. Open the Project Folder
+### 2. Open the project
 
 ```bash
 cd QR-Code-Generator-Scanner
 ```
 
-### 3. Install Dependencies
+### 3. Run
 
-```bash
-pip install -r requirements.txt
-```
+Open `index.html` in your browser.
 
-### 4. Run the Application
+For webcam scanning, it's recommended to run the project using a local server.
 
-```bash
-python main.py
-```
-
----
-
-##  Required Libraries
-
-Install the following libraries if you are not using `requirements.txt`:
-
-```bash
-pip install qrcode
-pip install pillow
-pip install opencv-python
-pip install pyzbar
-```
+Example using VS Code Live Server.
 
 ---
 
@@ -115,67 +103,110 @@ pip install pyzbar
 
 ### Generate QR Code
 
-1. Open the application.
+1. Open the **Generate** tab.
 2. Enter text or a URL.
-3. Click **Generate QR**.
-4. Preview the generated QR code.
-5. Click **Save** to store it.
+3. Click **Generate**.
+4. Download, print, or share the QR code.
 
 ### Scan QR Code
 
-1. Click **Open Camera** to scan using your webcam.
-2. Or click **Scan Image** to decode a QR code from an image.
-3. The decoded content will be displayed automatically.
-4. Copy or open the scanned URL directly.
+1. Open the **Scanner** tab.
+2. Click **Open Camera** or **Scan Image**.
+3. The scanned result will appear automatically.
+
+### History
+
+- View all generated and scanned QR codes.
+- Search records.
+- Delete records.
+- Export or import history.
 
 ---
 
+##  Screenshots
 
-##  Future Enhancements
+### Home
 
-*  Dark Mode
-*  Wi-Fi QR Code Generator
-*  Contact (vCard) QR Generator
-*  PDF Export
-*  QR Code Analytics
-*  Cloud Backup
-*  Custom QR Colors
-*  Logo Embedded QR Codes
-*  Mobile Version
-*  Multi-language Support
+```
+Generate QR Code
+-------------------------
+Enter Text / URL
+
+[ Generate ]
+[ Download ]
+[ Clear ]
+
+QR Preview
+```
+
+### Scanner
+
+```
+Open Camera
+
+Scan Image
+
+Result
+
+https://github.com
+```
+
+### History
+
+```
+Search History
+
+Export
+
+Import
+
+Dark Mode
+
+Statistics
+```
+
+---
+
+##  Libraries
+
+### QRCode.js
+
+Used for generating QR codes.
+
+### html5-qrcode
+
+Used for scanning QR codes using the webcam and images.
+
+---
+
+##  Future Improvements
+
+- User authentication
+- Cloud history sync
+- Multiple QR code styles
+- Custom colors
+- Logo inside QR code
+- PDF export
+- Batch QR generation
+- Multi-language support
 
 ---
 
 ##  Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
-1. Fork this repository.
-2. Create a feature branch.
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit your changes.
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push your branch.
-
-```bash
-git push origin feature-name
-```
-
-5. Open a Pull Request.
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push the branch
+5. Create a Pull Request
 
 ---
 
 ##  License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the MIT License.
 
 ---
 
@@ -183,14 +214,14 @@ This project is licensed under the **MIT License**.
 
 **Varun Shetty**
 
-*  Computer Science & Engineering Student
-*  Python | C | C++ Programmer
-*  Passionate about Software Development and Open Source
+Computer Science Engineering Student
+
+GitHub: https://github.com/your-username
 
 ---
 
 ##  Support
 
-If you found this project helpful, please give it a ⭐ on GitHub.
+If you like this project, please ⭐ star the repository and share it with others.
 
 Happy Coding! 
