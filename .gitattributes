@@ -1,0 +1,42 @@
+```gitattributes
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python files
+*.py text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# JSON files
+*.json text eol=lf
+
+# YAML files
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Requirements
+requirements.txt text eol=lf
+
+# Git ignore
+.gitignore text eol=lf
+
+# License
+LICENSE text eol=lf
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# QR Code images
+generated/*.png binary
+
+# PDF files
+*.pdf binary
+
+# Zip files
+*.zip binary
+```
