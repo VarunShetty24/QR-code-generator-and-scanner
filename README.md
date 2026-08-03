@@ -4,11 +4,6 @@ A modern and responsive **QR Code Generator & Scanner** built using **HTML, CSS,
 
 ---
 
-##  Preview
-
-![Project Screenshot](assets/output.png)
-
----
 
 ##  Features
 
